@@ -3,6 +3,5 @@ numpy
 scikit-learn
 xgboost
 joblib
-fastapi
-uvicorn
-shap
+flask
+flask-cors
