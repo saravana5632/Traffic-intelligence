@@ -361,7 +361,7 @@ function App() {
                 </span>
 
                 <strong>
-                  {result.predicted_vehicles}
+                  {Math.round(result.predicted_vehicles)}
                 </strong>
 
                 <small>
