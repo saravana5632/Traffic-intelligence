@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import AnalyticsDashboard from './AnalyticsDashboard';
+const API_URL = "https://traffic-intelligence-qtsr.onrender.com";
 
 function App() {
   const [junctions, setJunctions] = useState([]);
@@ -25,7 +26,7 @@ function App() {
     async function loadJunctions() {
       try {
         const response = await fetch(
-          "http://127.0.0.1:5000/api/junctions"
+          `${API_URL}/api/junctions`
         );
 
         if (!response.ok) {
@@ -82,7 +83,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/api/predict",
+        `${API_URL}/api/predict`,
         {
           method: "POST",
 
