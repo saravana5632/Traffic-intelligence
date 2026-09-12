@@ -5,3 +5,4 @@ xgboost
 joblib
 flask
 flask-cors
+gunicorn
